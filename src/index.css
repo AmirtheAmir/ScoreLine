@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Empera-Inline";
+  src: url("./Assests/Fonts/Empera-Inline.ttf") format("truetype");
+  src: url("./Assests/Fonts/Empera-Inline.otf") format("otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Empera-Inlinevintage";
+  src: url("./Assests/Fonts/Empera-InlineVintage.otf") format("otf");
+  src: url("./Assests/Fonts/Empera-InlineVintage.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Empera-Regular";
+  src: url("./Assests/Fonts/Empera-Regular.otf") format("otf");
+  src: url("./Assests/Fonts/Empera-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Empera-Soft";
+  src: url("./Assests/Fonts/Empera-Soft.otf") format("otf");
+  src: url("./Assests/Fonts/Empera-Soft.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Empera-Softvintage";
+  src: url("./Assests/Fonts/Empera-SoftVintage.otf") format("otf");
+  src: url("./Assests/Fonts/Empera-SoftVintage.ttf") format("truetype");
+}
+
+.separator {
+  position: relative;
+}
+.separator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  height: 60%;
+  width: 3px;
+  background-color: rgb(185, 0, 0);
+}
+.separator:last-child::after {
+  display: none;
+}
+
+/* 
+neutral-300
+stone-900
+amber-500
+orange-500
+sky-950 
+red-700
+*/
